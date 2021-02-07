@@ -9,12 +9,10 @@ document.getElementById('search').addEventListener('click', function () {
         .then(data => displayFoods(data.meals))
 
     const displayFoods = foods => {
-        console.log(foods)
         document.getElementById('food-area').innerHTML = '';
         const foodsArea = document.getElementById('food-area');
 
         foods.forEach(food => {
-            console.log(food.strMeal)
             const foodDiv = document.createElement('div');
             foodDiv.className = 'food';
             const foodInfo = `
@@ -40,7 +38,6 @@ const displayFoodDetail = name => {
 }
 
 const renderFoodInfo = food => {
-    console.log(food);
     const foodDiv = document.getElementById('food-detail');
     foodDiv.className = "ingredients"
     foodDiv.innerHTML = `
