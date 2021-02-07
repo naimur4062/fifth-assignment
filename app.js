@@ -7,7 +7,7 @@ document.getElementById('search').addEventListener('click', function () {
     fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=' + food + '')
         .then(res => res.json())
         .then(data => displayFoods(data.meals))
-        .catch(err => alert('Sorry, this food is not available here.'));
+        .catch(Error => alert('Sorry, this food is not available here.'));
     const displayFoods = foods => {
         document.getElementById('food-area').innerHTML = '';
         const foodsArea = document.getElementById('food-area');
