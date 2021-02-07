@@ -53,6 +53,10 @@ const renderFoodInfo = food => {
          <li>${food.strMeasure4} ${food.strIngredient4}</li>
          <li>${food.strMeasure5} ${food.strIngredient5}</li>
          <li>${food.strMeasure6} ${food.strIngredient6}</li>
+         <li>${food.strMeasure7} ${food.strIngredient7}</li>
+         <li>${food.strMeasure8} ${food.strIngredient8}</li>
+         <li>${food.strMeasure9} ${food.strIngredient9}</li>
+         <li>${food.strMeasure10} ${food.strIngredient10}</li>
          </ul>
          </div>
     `
