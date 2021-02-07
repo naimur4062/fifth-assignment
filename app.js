@@ -1,3 +1,4 @@
+// this is for getting foods by searching
 document.getElementById('search').addEventListener('click', function () {
     const food = document.getElementById('food').value;
     document.getElementById('food').value = '';
@@ -28,6 +29,7 @@ document.getElementById('search').addEventListener('click', function () {
     }
 })
 
+// this is for food's detail
 const displayFoodDetail = name => {
     const foodBlock = document.getElementById('food-detail');
     foodBlock.style.display = 'block';
@@ -62,3 +64,5 @@ const renderFoodInfo = food => {
          </div>
     `
 }
+
+// Thank You
